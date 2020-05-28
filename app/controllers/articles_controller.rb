@@ -18,8 +18,7 @@ class ArticlesController < ApplicationController
   def edit
   end
 
-  # POST /articles
-  # POST /articles.json
+  
   def create
     @article = Article.new(article_params)
 
@@ -34,8 +33,7 @@ class ArticlesController < ApplicationController
     end
   end
 
-  # PATCH/PUT /articles/1
-  # PATCH/PUT /articles/1.json
+  
   def update
     respond_to do |format|
       if @article.update(article_params)
